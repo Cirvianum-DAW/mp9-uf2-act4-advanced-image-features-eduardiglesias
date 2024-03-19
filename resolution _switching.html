@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 3</title>
+  </head>
+  <body>
+    <h1>Resolution Switching</h1>
+
+    <img
+      src="image_low_res.jpg"
+      srcset="
+        image_low_res.jpg     300w,
+        image_medium_res.jpg  600w,
+        image_high_res.jpg   1200w
+      "
+      sizes="(max-width: 600px) 300px,
+                (max-width: 1200px) 600px,
+                1200px"
+      alt="Example of resolution switching"
+    />
+
+    <p>
+      The srcset attribute allows us to provide multiple image sources with
+      different resolutions. The sizes attribute specifies the display size of
+      the image based on media conditions, such as viewport width. In this
+      example, the browser will choose the appropriate image source from srcset
+      based on the available viewport width and the conditions specified in
+      sizes.
+    </p>
+  </body>
+</html>

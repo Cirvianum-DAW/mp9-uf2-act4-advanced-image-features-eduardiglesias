@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 1 and 2</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-200 text-black">
+    <div class="flex flex-wrap">
+      <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
+        <h1 class="text-2xl font-bold mb-4">Basic Image Example</h1>
+
+        <img
+          src="/images/exercise1.jpg"
+          alt="Descripció breu de la imatge"
+          class="w-full rounded-lg mb-4"
+        />
+
+        <p class="text-base text-gray-700 leading-relaxed">
+          The alt attribute is important for images because it provides
+          alternative text that is displayed when the image cannot be rendered
+          or if the user is using a screen reader. This is crucial for
+          accessibility purposes as it ensures that individuals with visual
+          impairments can still understand the content of the image.
+          Additionally, search engines rely on alt text to understand and index
+          images, which can improve the website's SEO.
+        </p>
+      </div>
+
+      <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
+        <h1 class="text-2xl font-bold mb-4">Image Formats and Attributes</h1>
+
+        <h2 class="text-xl font-semibold mb-2">WEBP Image</h2>
+        <img
+          src="/images/exercise2.webp"
+          alt="Example of a WEBP image"
+          width="300"
+          height="200"
+          class="w-full rounded-lg mb-4"
+        />
+
+        <h2 class="text-xl font-semibold mb-2">AVIF Image</h2>
+        <img
+          src="/images/exercise2.avif"
+          alt="Example of an AVIF image"
+          width="400"
+          height="300"
+          class="w-full rounded-lg mb-4"
+        />
+
+        <p class="text-base text-gray-700 leading-relaxed">
+          The width and height attributes in the <img /> element allow you to
+          specify the dimensions at which the image should be displayed on the
+          webpage. However, these attributes do not affect the actual file size
+          or resolution of the image itself. They simply control how the browser
+          renders the image within the webpage layout. Therefore, adjusting the
+          width and height attributes can alter the visual appearance of the
+          image without modifying its underlying quality or file size.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
