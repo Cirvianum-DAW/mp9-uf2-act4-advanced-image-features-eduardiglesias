@@ -3,27 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exercise 3</title>
+    <title>Exercise 4 and 5</title>
     <link
-    href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-    rel="stylesheet"
-  />
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Estilo para hacer las imágenes responsivas */
+      img {
+          max-width: 100%;
+          height: auto;
+      }
+  </style>
   </head>
-  <body>
+  <body class="bg-gray-200 text-black">
     <nav class="bg-black text-white p-4">
       <ul class="flex space-x-4">
-          <li><a href="basic_image.html">Exercise 1 | Exercise 2</a></li>
-          <li><a href="resolution _switching.html">Exercise 3</a></li>
-          <li><a href="image_aligment.html">Exercise 4 | Exercise 5</a></li>
-          <li><a href="exercise6.html">Exercise 6</a></li>
-          <li><a href="exercise7.html">Exercise 7 | Exercise 8</a></li>
-          <li><a href="index.html">HOME</a></li>
+        <li><a href="basic_image.html">Exercise 1 | Exercise 2</a></li>
+        <li><a href="resolution _switching.html">Exercise 3</a></li>
+        <li><a href="image_aligment.html">Exercise 4 | Exercise 5</a></li>
+        <li><a href="exercise6.html">Exercise 6</a></li>
+        <li><a href="exercise7.html">Exercise 7 | Exercise 8</a></li>
+        <li><a href="index.html">HOME</a></li>
       </ul>
-  </nav>
-  <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
-    <h1 class="text-2xl font-bold mb-4">Resolution Switching</h1>
+    </nav>
+    <div class="flex flex-wrap">
+      <div class="mx-auto bg-white p-6 rounded-lg shadow-md m-8">
+        <h1 class="text-2xl font-bold mb-4">
+          Creating Clickable Images with Image Maps
+        </h1>
 
-  </div>
+        <img
+        src="/images/exercise4.png"
+        alt="World map"
+        class="w-full rounded-lg mb-4"
+        width="1920" height="965"
+        usemap="#map"/>
+        <map name="map">
+          <!-- #$-:Image map file created by GIMP Image Map plug-in -->
+          <!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+          <!-- #$-:Please do not edit lines starting with "#$" -->
+          <!-- #$VERSION:2.3 -->
+          <!-- #$AUTHOR:eduar -->
+          <area shape="poly" coords="822,314,773,390,777,521,842,539,907,533,920,605,910,695,969,808,1038,796,1144,745,1180,650,1136,576,1168,481,1161,460,1122,460,1046,349,1036,324,965,324,906,287,820,318,820,319" href="https://en.wikipedia.org/wiki/Africa" />
+          <area shape="poly" coords="1622,528,1594,557,1664,619,1628,602,1546,651,1515,726,1539,817,1605,822,1639,789,1672,802,1691,840,1742,844,1784,844,1910,899,1919,823,1796,758,1775,697,1710,635,1710,620,1757,623,1759,610,1714,559,1623,526,1622,527,1621,532,1615,536" href="https://en.wikipedia.org/wiki/Oceania" />
+          <area shape="poly" coords="689,2,588,9,532,22,484,80,383,88,333,90,235,64,181,103,6,91,0,218,101,191,162,215,202,322,261,415,332,463,396,506,392,554,392,610,431,687,387,871,390,950,432,964,484,960,487,933,471,914,493,839,582,787,596,739,658,713,666,637,705,600,662,545,616,529,529,465,491,433,457,384,517,292,565,280,610,249,612,185,684,147,754,140,783,67,795,9,736,2,700,4" href="https://en.wikipedia.org/wiki/Americas" />
+          <area shape="poly" coords="1156,119,1170,200,1156,253,1148,278,1150,316,1144,335,1104,335,1061,321,1043,320,1008,320,992,316,969,314,946,309,898,279,843,310,821,308,801,252,841,253,822,170,871,163,895,185,900,135,944,110,1029,93,1089,105,1098,117,1155,117" href="https://en.wikipedia.org/wiki/Europe" />
+          <area shape="poly" coords="1170,110,1237,74,1303,84,1403,60,1456,67,1564,86,1574,61,1666,80,1763,102,1826,109,1826,157,1758,184,1731,227,1689,257,1664,309,1624,364,1527,395,1548,520,1552,572,1522,594,1461,598,1419,569,1357,439,1325,505,1277,496,1234,415,1150,452,1126,454,1051,340,1058,329,1106,342,1155,337,1156,272,1177,197,1163,118" href="https://en.wikipedia.org/wiki/Asia" />
+          </map>
+      </div>
 
+      <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md m-8">
+        <h1 class="text-2xl font-bold mb-4">Responsive Images</h1>
+
+        <p class="text-base text-gray-700 leading-relaxed">
+          The <code>max-width</code> property in CSS is used to set the maximum
+          width of an element. When applied to images, it ensures that the image
+          will never exceed the specified maximum width, regardless of the size
+          of the viewport or device screen. This allows the image to scale down
+          proportionally to fit smaller screens, ensuring that it remains fully
+          visible and doesn't overflow its container. By limiting the maximum
+          width of the image, it adapts to various screen sizes and resolutions,
+          making it responsive across different devices and browsers.
+        </p>
+      </div>
+    </div>
   </body>
 </html>
