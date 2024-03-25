@@ -3,133 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercises Navigation with Tailwind CSS</title>
-    <!-- Incluye Tailwind CSS desde un CDN -->
+    <title>Exercises Navigation</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-white dark:bg-gray-800 text-black dark:text-white">
-    <!-- Nav con Tailwind CSS -->
     <nav class="bg-black text-white p-4">
         <ul class="flex space-x-4">
-            <li><a href="basic_image.html">Exercise 1</a></li>
-            <li><a href="exercise2.html">Exercise 2</a></li>
-            <li><a href="exercise3.html">Exercise 3</a></li>
-            <li><a href="exercise4.html">Exercise 4</a></li>
-            <li><a href="exercise5.html">Exercise 5</a></li>
+            <li><a href="basic_image.html">Exercise 1 | Exercise 2</a></li>
+            <li><a href="resolution _switching.html">Exercise 3</a></li>
+            <li><a href="image_aligment.html">Exercise 4 | Exercise 5</a></li>
             <li><a href="exercise6.html">Exercise 6</a></li>
-            <li><a href="exercise7.html">Exercise 7</a></li>
-            <li><a href="exercise8.html">Exercise 8</a></li>
+            <li><a href="exercise7.html">Exercise 7 | Exercise 8</a></li>
+            <li><a href="index.html">HOME</a></li>
         </ul>
     </nav>
-    <h1><strong>Image Features in HTML</strong></h1>
-    <h2>Exercise 1: Basic Image Insertion</h2>
-    <p><strong>Instructions:</strong></p>
-    <ol>
-        <li>Create an HTML file named <code>basic_image.html</code>.</li>
-        <li>Find an image online (ensure it's freely usable and respects copyrights).</li>
-        <li>Insert the image into the HTML file using the <code>&lt;img&gt;</code> element.</li>
-        <li>Set the <code>src</code> attribute to the image file's URL.</li>
-        <li>Provide a brief description of the image using the <code>alt</code> attribute.</li>
-        <li>Test the page in a web browser to ensure the image displays correctly.</li>
-    </ol>
-    <p><strong>Why is the alt attribute important for images?</strong> Write a brief explanation in the HTML file.</p>
-
-    <h2>Exercise 2: Image Formats and Attributes</h2>
-    <p><strong>Instructions:</strong></p>
-    <ol>
-        <li>Expand the <code>basic_image.html</code> file.</li>
-        <li>Choose two images in modern formats (e.g., WEBP, AVIF...).</li>
-        <li>Include examples of each format using the <code>&lt;img&gt;</code> element with appropriate attributes.</li>
-        <li>Experiment with setting <code>width</code> and <code>height</code> attributes to control image size.</li>
-        <li>Test the page to observe how different attributes affect image display.</li>
-        <li>What is the difference between the real size of the image and these attributes? Write a brief explanation in the HTML file.</li>
-    </ol>
-
-    <h2>Exercise 3: Resolution Switching - Modern Img Tags</h2>
-    <p><strong>Instructions:</strong></p>
-    <ol>
-        <li>Create a new HTML file named <code>resolution_switching.html</code>.</li>
-        <li>Use the <code>&lt;img&gt;</code> element to include an image in the HTML file.</li>
-        <li>Add the <code>srcset</code> attribute to provide multiple image sources with different resolutions.</li>
-        <li>Include the <code>sizes</code> attribute to specify the image's display size based on media conditions.</li>
-        <li>Test the page in a browser and observe how different images are displayed based on the media conditions.</li>
-    </ol>
-
-    <h2>Exercise 4: Creating Clickable Images with Image Maps</h2>
-    <p><strong>Instructions:</strong></p>
-    <ol>
-        <li>Expand the <code>image_alignment.html</code> file.</li>
-        <li>Choose an image suitable for creating clickable areas (e.g., a map, diagram, or infographic).</li>
-        <li>Use a program like Gimp to create a map of the image.</li>
-        <li>Use the <code>&lt;map&gt;</code> and <code>&lt;area&gt;</code> elements to define clickable regions on the image.</li>
-        <li>Define the shape (rectangular, circular, or polygonal) and coordinates for each clickable area using the <code>shape</code> and <code>coords</code> attributes.</li>
-        <li>Associate each <code>&lt;area&gt;</code> element with a specific hyperlink using the <code>href</code> attribute.</li>
-        <li>Test the page to ensure clicking on different areas of the image navigates to the specified links.</li>
-    </ol>
-
-    <h2>Exercise 5: Responsive Images</h2>
-    <p><strong>Instructions:</strong></p>
-    <ol>
-        <li>Expand the <code>image_alignment.html</code> file.</li>
-        <li>Add a CSS style to make images responsive using the <code>max-width</code> property.</li>
-        <li>How does the <code>max-width</code> property help make images responsive? Write a brief explanation in the HTML file.</li>
-    </ol>
-
-    <h2>Exercise 6: Image Gallery with Lightbox</h2>
-    <p><strong>Instructions:</strong></p>
-    <ol>
-        <li>Create a new HTML file named <code>image_gallery.html</code>.</li>
-        <li>Insert multiple images into the HTML file using the <code>&lt;img&gt;</code> element.</li>
-        <li>Use CSS to style the images as a grid or flexbox layout.</li>
-        <li>Research and find a JavaScript library for creating a lightbox effect (e.g., Lightbox2).</li>
-    </ol>
-
-    <h2>Exercise 7: Figure Elements</h2>
-    <p><strong>Instructions:</strong></p>
-    <ol>
-        <li>Create a new HTML file named <code>figure_picture.html</code>.</li>
-        <li>Start by using the <code>&lt;figure&gt;</code> element to encapsulate an image with a caption.</li>
-        <li>Insert an image within the <code>&lt;figure&gt;</code> element.</li>
-        <li>Add a <code>&lt;figcaption&gt;</code> element inside the <code>&lt;figure&gt;</code> to provide a caption for the image.</li>
-        <li>Experiment with different styling options for the image and caption using CSS.</li>
-        <li>What is the purpose of the <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> elements? Write a brief explanation in the HTML file.</li>
-    </ol>
-
-    <h2>Exercise 8: Art Direction - Picture elements</h2>
-    <p><strong>Instructions:</strong></p>
-    <ol>
-        <li>Expand the <code>figure_picture.html</code> file.</li>
-        <li>Use the <code>&lt;picture&gt;</code> element to provide different image sources based on media conditions.</li>
-        <li>Include multiple <code>&lt;source&gt;</code> elements within the <code>&lt;picture&gt;</code> element, each with different image sources and media conditions.</li>
-        <li>Test the page in a browser and observe how different images are displayed based on the media conditions.</li>
-    </ol>
-</body>
-<body class="bg-gray-200 text-black">
-  <div class="container mx-auto p-4">
-      <h1 class="text-3xl font-bold"><strong>Image Features in HTML</strong></h1>
-
-      <h2 class="text-2xl font-bold mt-4">Exercise 1: Basic Image Insertion</h2>
-      <p><strong>Instructions:</strong></p>
-      <ol class="list-decimal pl-8">
-          <li>Create an HTML file named <code>basic_image.html</code>.</li>
-          <li>Find an image online (ensure it's freely usable and respects copyrights).</li>
-          <li>Insert the image into the HTML file using the <code>&lt;img&gt;</code> element.</li>
-          <li>Set the <code>src</code> attribute to the image file's URL.</li>
-          <li>Provide a brief description of the image using the <code>alt</code> attribute.</li>
-          <li>Test the page in a web browser to ensure the image displays correctly.</li>
-      </ol>
-      <p><strong>Why is the alt attribute important for images?</strong> Write a brief explanation in the HTML file.</p>
-
-      <h2 class="text-2xl font-bold mt-4">Exercise 2: Image Formats and Attributes</h2>
-      <p><strong>Instructions:</strong></p>
-      <ol class="list-decimal pl-8">
-          <li>Expand the <code>basic_image.html</code> file.</li>
-          <li>Choose two images in modern formats (e.g., WEBP, AVIF...).</li>
-          <li>Include examples of each format using the <code>&lt;img&gt;</code> element with appropriate attributes.</li>
-          <li>Experiment with setting <code>width</code> and <code>height</code> attributes to control image size.</li>
-          <li>Test the page to observe how different attributes affect image display.</li>
-          <li>What is the difference between the real size of the image and these attributes? Write a brief explanation in the HTML file.</li>
-      </ol>
-  </div>
 </body>
 </html>
