@@ -13,55 +13,80 @@
   <body class="bg-gray-200 text-black">
     <nav class="bg-black text-white p-4">
       <ul class="flex space-x-4">
-          <li><a href="basic_image.html">Exercise 1 | Exercise 2</a></li>
-          <li><a href="resolution _switching.html">Exercise 3</a></li>
-          <li><a href="image_aligment.html">Exercise 4 | Exercise 5</a></li>
-          <li><a href="image_gallery.html">Exercise 6</a></li>
-          <li><a href="figure_picture.html">Exercise 7 | Exercise 8</a></li>
-          <li><a href="index.html">HOME</a></li>
+        <li><a href="basic_image.html">Exercise 1 | Exercise 2</a></li>
+        <li><a href="resolution _switching.html">Exercise 3</a></li>
+        <li><a href="image_aligment.html">Exercise 4 | Exercise 5</a></li>
+        <li><a href="image_gallery.html">Exercise 6</a></li>
+        <li><a href="figure_picture.html">Exercise 7 | Exercise 8</a></li>
+        <li><a href="index.html">HOME</a></li>
       </ul>
-  </nav>
+    </nav>
     <div class="flex flex-wrap">
       <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md m-8">
         <h1 class="text-2xl font-bold mb-4">Figure Elements</h1>
 
-        <img
-          src="/images/exercise1.jpg"
-          alt="Blue and yellow parrot on a branch"
-          class="w-full rounded-lg mb-4"
-        />
+        <figure class="text-center">
+          <img
+            src="/images/exercise7.jpg"
+            alt="Books"
+            class="w-full rounded-lg mb-4"
+          />
+          <figcaption class="italic text-gray-600 text-sm mb-8">
+            This image shows many books.
+          </figcaption>
+        </figure>
 
         <p class="text-base text-gray-700 leading-relaxed">
-          The <code>alt</code> attribute is important for images because it provides
-          alternative text that is displayed when the image cannot be rendered
-          or if the user is using a screen reader. This is crucial for
-          accessibility purposes as it ensures that individuals with visual
-          impairments can still understand the content of the image.
-          Additionally, search engines rely on alt text to understand and index
-          images, which can improve the website's SEO.
+          The <code>figure</code> element is used to encapsulate a
+          self-contained content such as images, diagrams, illustrations, code
+          snippets, etc. It provides a semantic way to group together content
+          and its related caption or legend. The purpose of the
+          <code>figcaption</code> element is to provide a caption or description
+          for the content encapsulated within the <code>figure</code> element.
+          This helps to associate the caption directly with the content it
+          describes, enhancing accessibility and improving the structure and
+          semantics of the HTML document.
         </p>
       </div>
 
       <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md m-8">
-        <h1 class="text-2xl font-bold mb-4">Art Direction - Picture elements</h1>
+        <h1 class="text-2xl font-bold mb-4">
+          Art Direction - Picture elements
+        </h1>
 
-        <h2 class="text-xl font-semibold mb-2">WEBP Image</h2>
-        <img
-          src="/images/exercise2.webp"
-          alt="Hand with a blue color spray painting a wall"
-          width="300"
-          height="200"
-          class="w-full rounded-lg mb-4"
-        />
+        <picture class="rounded-lg mb-4">
+          <!-- Small screen -->
+          <source srcset="/images/exercise8_small.jpg" media="(max-width: 640px)" />
+          <!-- Medium screen -->
+          <source
+            srcset="/images/exercise8_medium.jpg"
+            media="(max-width: 1024px)"
+          />
+          <!-- Large screen -->
+          <source srcset="/images/exercise8_large.jpg" />
+          <!-- Fallback for browsers that don't support picture element -->
+          <img
+            src="/images/exercise8_large.jpg"
+            alt="Coffe cup"
+            class="mx-auto rounded-lg shadow-md max-w-full h-auto"
+          />
+        </picture>
 
         <p class="text-base text-gray-700 leading-relaxed">
-          The <code>width</code> and <code>height</code> attributes in the <code>img</code> element allow you to
-          specify the dimensions at which the image should be displayed on the
-          webpage. However, these attributes do not affect the actual file size
-          or resolution of the image itself. They simply control how the browser
-          renders the image within the webpage layout. Therefore, adjusting the
-          width and height attributes can alter the visual appearance of the
-          image without modifying its underlying quality or file size.
+          When the browser window width is less than or equal to 640 pixels, the
+          image-small.jpg will be displayed.
+        </p class="text-base text-gray-700 leading-relaxed">
+        <br>
+        <br>
+        <p class="text-base text-gray-700 leading-relaxed">
+          When the browser window width is greater than 640 pixels but less than
+          or equal to 1024 pixels, the image-medium.jpg will be displayed.
+        </p>
+        <br>
+        <br>
+        <p class="text-base text-gray-700 leading-relaxed">
+          When the browser window width is greater than 1024 pixels, the
+          image-large.jpg will be displayed.
         </p>
       </div>
     </div>
