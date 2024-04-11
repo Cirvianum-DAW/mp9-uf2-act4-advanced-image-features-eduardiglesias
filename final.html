@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="/css/lightbox.css" rel="stylesheet" />
+    <title>Exercise 6</title>
+    <style>
+        /* Estilos específicos */
+        .background-image {
+            background-image: url('/images/Fons.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-200 text-black">
+    <nav class="bg-black text-white p-4">
+        <ul class="flex space-x-4">
+            <li><a href="basic_image.html">Exercise 1 | Exercise 2</a></li>
+            <li><a href="resolution_switching.html">Exercise 3</a></li>
+            <li><a href="image_aligment.html">Exercise 4 | Exercise 5</a></li>
+            <li><a href="image_gallery.html">Exercise 6</a></li>
+            <li><a href="figure_picture.html">Exercise 7 | Exercise 8</a></li>
+            <li><a href="vector_images.html">Vector Images</a></li>
+            <li><a href="final.html">DOCUMENT HTML</a></li>
+            <li><a href="index.html">HOME</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenedor principal -->
+    <div class="background-image h-screen flex flex-col justify-center items-center">
+
+        <!-- Palmera sin tamaño definido -->
+        <img src="/images/palms1.svg" alt="Palmera sin tamaño">
+
+        <!-- Palmera con tamaño 150x150 -->
+        <img src="/images/palms2.svg" alt="Palmera tamaño 150x150" class="w-24 h-24">
+
+        <!-- Logo 1 -->
+        <svg class="w-24 h-24">
+            <image xlink:href="/images/logo1.svg" width="100%" height="100%" />
+        </svg>
+
+        <!-- Logo 2 con tamaño 150x150 -->
+        <svg class="w-24 h-24">
+            <image xlink:href="/images/logo2.svg" width="100%" height="100%" />
+        </svg>
+
+    </div>
+
+</body>
+
+</html>
